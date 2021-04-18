@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculadora Extreme - imersãoDEV</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>
+        Calculadora Extreme
+    </title>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Uma calculadora arretada!</h1>
+      <div class="row row-2">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <div class="cx-calculadora">
+      <div class="output-box" id="output"></div>
+      <table>
+        <tr>
+          <td><a style="padding-top: 10px;" class="btn btn-blue" onclick="mostrarParEsq()">(</a></td>
+          <td><a style="padding-top: 10px;" class="btn btn-blue" onclick="mostrarParDir()">)</a></td>
+          <td><a style="padding-top: 10px;" class="btn btn-blue" onclick="clean()">C</a></td>
+          <td><a style="padding-top: 10px;" class="btn btn-blue" onclick="backspace()">⌫</a></td>
+        </tr>
+        <tr>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarSete()">7</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarOito()">8</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarNove()">9</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-blue" onclick="mostrarDivisao()">÷</a></td>
+        </tr>
+        <tr>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarQuatro()">4</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarCinco()">5</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarSeis()">6</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-blue" onclick="mostrarVezes()">x</a></td>
+        </tr>
+        <tr>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarUm()">1</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarDois()">2</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarTres()">3</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-blue" onclick="mostrarMenos()">-</a></td>
+        </tr>
+        <tr>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarZero()">0</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-gray" onclick="mostrarPonto()">.</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-dark-gray" onclick="calcular()">=</a></td>
+          <td><a  style="padding-top: 10px;" class="btn btn-blue" onclick="mostrarMais()">+</a></td>
+        </tr>
+      </table>
+      </div>
+        </div>
+      <div class="col-sm-4"></div>
+     </div>
+    </div>
+</body>
+<footer style="padding-left: 20px;">
+  <p>Tratativa de erros:</p>
+  <p>Não calcula se a expressão começar com ), +, -, /, *</p>
+  
+  <p>Não calcula se a expressão termina com (, +, -, /, *</p>
+  
+  <p>Não calcula se a expressão é vazia</p>
+  </footer>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
